@@ -1,0 +1,10 @@
+@mixin flex($flex ,$just) {
+    display: $flex;
+    justify-content:$just;
+}
+
+@mixin center($reason ,$center ,$centeral) {
+    display: $reason;
+    justify-content: $center;
+    align-items: $centeral;
+}

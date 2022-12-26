@@ -1,0 +1,114 @@
+// header styles
+body {
+    background-color: #1C1F23;
+    .container {
+        @extend %center;
+        
+        .wrap {
+            @include center(flex ,space-around ,center);
+            padding: 30px;
+            
+            h1 {
+                font-size: 35px;
+                color: #fff;
+                background-color: $color1;
+                height: 80px;
+                max-width: 200px;
+                width: 100%;
+                border-radius: 25px;
+                @include center(flex ,center ,center);
+                
+            }
+            .button {
+                font-size: 20px;
+                max-width: 200px;
+                width: 100%;
+                height: 50px;
+                border: none;
+                cursor: pointer;
+                background-color: $color1;
+                border-radius: 25px;
+                color: #fff;
+                }
+
+            .navwrap {
+                max-width: 900px;
+                width: 100%;
+                @include flex(flex ,flex-end);
+            
+                .nav {
+                    @include flex(flex ,space-around);
+                    max-width: 600px;
+                    width: 100%;
+                    font-size: 20px;
+                    color: #fff;    
+                }
+            }
+
+        }
+        
+    }
+}
+// landing page styles
+
+.sectioncontainer   {
+    @extend %center2;
+    @include flex(flex ,space-between);
+
+    .leftblock  {
+        max-width: 445px;
+        width: 100%;
+        color: #fff;
+        h3  {
+            font-size: 13px;
+            color: $color1;
+        }
+        h1  {
+            font-size: 40px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        p   {
+            color: #D1E0FB;
+            font-size: 20px;
+        }
+        .buttonwrap {
+            max-width: 355px;
+            width: 100%;
+            @include flex(flex ,space-between);
+            margin-top: 26px;
+
+            .but1   {
+                max-width: 167px;
+                width: 100%;
+                height: 48px;
+                border: 2px $color1 solid;
+                border-radius: 12px;
+                @include center(flex ,center ,center);
+
+                a  {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .rightblock {
+        max-width: 811px;
+        width: 100%;
+        .box    {
+            max-width: 255px;
+            width: 100%;
+            height: 284px;
+            background-color: #2D2F33;
+
+            .boxcr  {
+                height: 96px;
+                width: 96px;
+                border-radius: 48px;
+                background-color: #4579F5;
+                opacity: .5;
+            }
+            
+        }
+    }
+}

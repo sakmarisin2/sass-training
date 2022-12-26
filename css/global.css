@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, main, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body .container {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sectioncontainer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #1C1F23;
+}
+body .container .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+body .container .wrap h1 {
+  font-size: 35px;
+  color: #fff;
+  background-color: #377DFF;
+  height: 80px;
+  max-width: 200px;
+  width: 100%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .container .wrap .button {
+  font-size: 20px;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #377DFF;
+  border-radius: 25px;
+  color: #fff;
+}
+body .container .wrap .navwrap {
+  max-width: 900px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body .container .wrap .navwrap .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 600px;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.sectioncontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sectioncontainer .leftblock {
+  max-width: 445px;
+  width: 100%;
+  color: #fff;
+}
+.sectioncontainer .leftblock h3 {
+  font-size: 13px;
+  color: #377DFF;
+}
+.sectioncontainer .leftblock h1 {
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.sectioncontainer .leftblock p {
+  color: #D1E0FB;
+  font-size: 20px;
+}
+.sectioncontainer .leftblock .buttonwrap {
+  max-width: 355px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 26px;
+}
+.sectioncontainer .leftblock .buttonwrap .but1 {
+  max-width: 167px;
+  width: 100%;
+  height: 48px;
+  border: 2px #377DFF solid;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectioncontainer .leftblock .buttonwrap .but1 a {
+  color: #fff;
+}
+.sectioncontainer .rightblock {
+  max-width: 811px;
+  width: 100%;
+}
+.sectioncontainer .rightblock .box {
+  max-width: 255px;
+  width: 100%;
+  height: 284px;
+  background-color: #2D2F33;
+}
+.sectioncontainer .rightblock .box .boxcr {
+  height: 96px;
+  width: 96px;
+  border-radius: 48px;
+  background-color: #4579F5;
+  opacity: 0.5;
+}/*# sourceMappingURL=global.css.map */
