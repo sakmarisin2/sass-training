@@ -10,12 +10,12 @@ body {
             
             h1 {
                 font-size: 35px;
-                color: #fff;
+                color: $color2;
                 background-color: $color1;
                 height: 80px;
                 max-width: 200px;
                 width: 100%;
-                border-radius: 25px;
+                border-radius: $border25;
                 @include center(flex ,center ,center);
                 
             }
@@ -27,8 +27,8 @@ body {
                 border: none;
                 cursor: pointer;
                 background-color: $color1;
-                border-radius: 25px;
-                color: #fff;
+                border-radius: $border25;
+                color: $color2;
                 }
 
             .navwrap {
@@ -41,7 +41,7 @@ body {
                     max-width: 600px;
                     width: 100%;
                     font-size: 20px;
-                    color: #fff;    
+                    color: $color2;    
                 }
             }
 
@@ -53,62 +53,129 @@ body {
 
 .sectioncontainer   {
     @extend %center2;
-    @include flex(flex ,space-between);
+    @include flex(flex ,space-around);
+    position: relative;
+    margin-top: 90px;
+
+    .backbord   {
+        max-width: 1600px;
+        width: 100%;
+        height: 110px;
+        left: 0;
+        top: 40px;
+        background-color: $color1;
+        position: absolute;
+        z-index: 1;
+        border-bottom-left-radius: 122px;
+        border-top-right-radius: 122px;
+        
+    }
+    .backbord2  {
+        max-width: 1125px;
+        width: 100%;
+        height: 130px;
+        background-color: $color1;
+        position: absolute;
+        z-index: 1;
+        border-bottom-left-radius: 122px;
+        border-bottom-right-radius: 122px;
+        right: 0;
+        bottom: 160px;
+        
+    }
 
     .leftblock  {
-        max-width: 445px;
+        max-width: 300px;
         width: 100%;
-        color: #fff;
+        color: $color2;
+        margin-top: $marg20;
+        z-index: 10;
+        
         h3  {
             font-size: 13px;
             color: $color1;
         }
         h1  {
             font-size: 40px;
-            margin-top: 25px;
+            margin-top: $border25;
             margin-bottom: 35px;
         }
         p   {
-            color: #D1E0FB;
-            font-size: 20px;
+            color: $color3;
+            font-size: $marg20;
         }
         .buttonwrap {
             max-width: 355px;
             width: 100%;
             @include flex(flex ,space-between);
-            margin-top: 26px;
+            margin-top: $border25;
 
             .but1   {
-                max-width: 167px;
+                max-width: 135px;
                 width: 100%;
-                height: 48px;
+                height: 40px;
                 border: 2px $color1 solid;
                 border-radius: 12px;
                 @include center(flex ,center ,center);
 
                 a  {
-                    color: #fff;
+                    color: $color2;
                 }
             }
         }
     }
     .rightblock {
-        max-width: 811px;
+        max-width: 950px;
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 10;
+       
         .box    {
             max-width: 255px;
             width: 100%;
             height: 284px;
             background-color: #2D2F33;
+            border-radius: 12px;
+            @include column(flex ,column ,start);
+            margin: $marg20 $marg10;
+            
+            padding: $marg20;
+            line-height: 30px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+            h1  {
+                font-size: $marg20;
+                color: $color2;
+                margin-top: 26px;
+                margin-bottom: $marg10;
+                
+            }
+            p  {
+                font-size: 16px;
+                color: $color3;
+            }
+
 
             .boxcr  {
-                height: 96px;
-                width: 96px;
-                border-radius: 48px;
-                background-color: #4579F5;
-                opacity: .5;
+                    height: 96px;
+                    width: 96px;
+                    border-radius: 48px;
+                    @include center(flex ,center ,center);
+                    background-color: rgba(0,0,128,0.1);
+                    margin-top: $marg20;
+                   
             }
             
         }
     }
+}
+
+// section 2 styles
+
+.section2container  {
+    max-width: 1178px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
