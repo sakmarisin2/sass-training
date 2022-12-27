@@ -13,3 +13,14 @@
     flex-direction: $col;
     align-items: $aly;
 }
+
+@mixin columnspace($flex2 ,$colum ,$space) {
+    display: $flex2;
+    flex-direction: $colum;
+    justify-content: $space;
+}
+@mixin wrap($dos ,$wrap ,$direct) {
+    display: $dos;
+    flex-wrap: $wrap;
+    justify-content: $direct;
+}

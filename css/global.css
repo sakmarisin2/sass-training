@@ -80,7 +80,7 @@ body .container .wrap {
 }
 body .container .wrap h1 {
   font-size: 35px;
-  color: #fff;
+  color: #FAFAFA;
   background-color: #377DFF;
   height: 80px;
   max-width: 200px;
@@ -105,7 +105,7 @@ body .container .wrap .button {
   cursor: pointer;
   background-color: #377DFF;
   border-radius: 25px;
-  color: #fff;
+  color: #FAFAFA;
 }
 body .container .wrap .navwrap {
   max-width: 900px;
@@ -126,7 +126,7 @@ body .container .wrap .navwrap .nav {
   max-width: 600px;
   width: 100%;
   font-size: 20px;
-  color: #fff;
+  color: #FAFAFA;
 }
 
 .sectioncontainer {
@@ -165,7 +165,7 @@ body .container .wrap .navwrap .nav {
 .sectioncontainer .leftblock {
   max-width: 300px;
   width: 100%;
-  color: #fff;
+  color: #FAFAFA;
   margin-top: 20px;
   z-index: 10;
 }
@@ -210,7 +210,7 @@ body .container .wrap .navwrap .nav {
           align-items: center;
 }
 .sectioncontainer .leftblock .buttonwrap .but1 a {
-  color: #fff;
+  color: #FAFAFA;
 }
 .sectioncontainer .rightblock {
   max-width: 950px;
@@ -246,8 +246,8 @@ body .container .wrap .navwrap .nav {
 }
 .sectioncontainer .rightblock .box h1 {
   font-size: 20px;
-  color: #fff;
-  margin-top: 26px;
+  color: #FAFAFA;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 .sectioncontainer .rightblock .box p {
@@ -275,5 +275,142 @@ body .container .wrap .navwrap .nav {
   max-width: 1178px;
   width: 100%;
   margin: 0 auto;
+}
+.section2container .titlewrap {
+  height: 123px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
+  margin-top: 100px;
+}
+.section2container .titlewrap h1 {
+  font-size: 40px;
+  color: #FAFAFA;
+}
+.section2container .titlewrap P {
+  font-size: 20px;
+  color: #D1E0FB;
+}
+.section2container .box2wrap {
+  max-width: 1178px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 40px;
+  margin-top: 88px;
+}
+.section2container .box2wrap .box2 {
+  max-width: 350px;
+  width: 100%;
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  line-height: 20px;
+  margin: 15px;
+}
+.section2container .box2wrap .box2 p {
+  color: #D1E0FB;
+  margin-left: 70px;
+  font-size: 20px;
+}
+.section2container .box2wrap .box2 .boximgwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+.section2container .box2wrap .box2 .boximgwrap h1 {
+  color: #FAFAFA;
+  margin-left: 18px;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #0C0C0D;
+}
+
+.containerfooter {
+  max-width: 1412px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 130px 0;
+}
+.containerfooter .footerleft h1 {
+  font-size: 35px;
+  color: #FAFAFA;
+  margin-bottom: 25px;
+}
+.containerfooter .footerleft p {
+  font-size: 20px;
+  color: #D1E0FB;
+}
+.containerfooter .footerleft .footerimgwr {
+  max-width: 250px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 160px;
+}
+.containerfooter .footerleft .span {
+  color: #77838F;
+}
+.containerfooter .liwrap {
+  max-width: 917px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.containerfooter .liwrap .element h3 {
+  font-size: 25px;
+  color: #FAFAFA;
+  margin-bottom: 40px;
+}
+.containerfooter .liwrap .element ul {
+  line-height: 30px;
+}
+.containerfooter .liwrap .element ul li {
+  font-size: 20px;
+  color: #D1E0FB;
 }/*# sourceMappingURL=global.css.map */

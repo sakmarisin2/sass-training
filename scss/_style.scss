@@ -96,7 +96,7 @@ body {
             color: $color1;
         }
         h1  {
-            font-size: 40px;
+            font-size: $var40;
             margin-top: $border25;
             margin-bottom: 35px;
         }
@@ -139,7 +139,6 @@ body {
             border-radius: 12px;
             @include column(flex ,column ,start);
             margin: $marg20 $marg10;
-            
             padding: $marg20;
             line-height: 30px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -147,7 +146,7 @@ body {
             h1  {
                 font-size: $marg20;
                 color: $color2;
-                margin-top: 26px;
+                margin-top: $var25;
                 margin-bottom: $marg10;
                 
             }
@@ -177,5 +176,116 @@ body {
     max-width: 1178px;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
+    
+
+    .titlewrap  {
+        height: 123px;
+        @include columnspace(flex ,column ,space-evenly);
+        text-align: center;
+        margin-top: 100px;
+
+        h1  {
+            font-size: $var40;
+            color: $color2;
+        }
+        P   {
+            font-size: $marg20;
+            color: $color3;
+        }
+    }
+
+
+    .box2wrap {
+        max-width: 1178px;
+        width: 100%;
+        @include wrap(flex ,wrap ,center);
+        margin-left: $var40;
+        margin-top: 88px;
+        
+        .box2 {
+            max-width: 350px;
+            width: 100%;
+            height: 190px;
+            @include columnspace(flex ,column ,start);
+            line-height: $marg20;
+            margin: 15px;
+            p  {
+                color: $color3;
+                margin-left: 70px;
+                font-size: $marg20;
+            }
+            
+            .boximgwrap {
+                @include center(flex ,start ,top);
+                
+                h1 {
+                    color: $color2;
+                    margin-left: 18px;
+                    font-size: $var25;
+                }
+            }
+
+        }
+    }
+        
+}
+// footer
+footer {
+    background-color: #0C0C0D;
+}
+.containerfooter   {
+    max-width: 1412px;
+    width: 100%;
+    margin: 0 auto;
+    @include flex(flex ,space-between);
+    padding: 130px 0;
+    
+
+    .footerleft {
+        h1  {
+            font-size: 35px;
+            color: $color2;
+            margin-bottom: $var25;
+        }
+
+        p   {
+            font-size: $marg20;
+            color: $color3;
+        }
+        .footerimgwr {
+            max-width: 250px;
+            width: 100%;
+            @include flex(flex ,space-between);
+            margin-top: 60px;
+            margin-bottom: 160px;
+        }
+        .span   {
+            color: #77838F;
+        }
+    }
+    .liwrap {
+        max-width: 917px;
+        width: 100%;
+        @include flex(flex ,space-between);
+        
+
+        .element    {
+            
+            h3  {
+                font-size: $var25;
+                color: $color2;
+                margin-bottom: $var40;
+            }
+            ul  {
+                line-height: 30px;
+                
+                li  {
+                    font-size: $marg20;
+                    color: $color3;
+                    
+                }
+            }
+            
+        }
+    }
 }
