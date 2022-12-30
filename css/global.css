@@ -58,7 +58,7 @@ body .container {
   margin: 0 auto;
 }
 
-.sectioncontainer {
+.section3center, .sectioncontainer {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -82,7 +82,7 @@ body .container .wrap h1 {
   font-size: 35px;
   color: #FAFAFA;
   background-color: #377DFF;
-  height: 80px;
+  height: 90px;
   max-width: 200px;
   width: 100%;
   border-radius: 25px;
@@ -95,6 +95,7 @@ body .container .wrap h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top-width: auto;
 }
 body .container .wrap .button {
   font-size: 20px;
@@ -126,7 +127,10 @@ body .container .wrap .navwrap .nav {
   max-width: 600px;
   width: 100%;
   font-size: 20px;
-  color: #FAFAFA;
+  color: #D1E0FB;
+}
+body .container .wrap .navwrap .nav a {
+  color: #D1E0FB;
 }
 
 .sectioncontainer {
@@ -208,8 +212,14 @@ body .container .wrap .navwrap .nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+  -webkit-transition: all, 1s, ease-in;
+  transition: all, 1s, ease-in;
 }
-.sectioncontainer .leftblock .buttonwrap .but1 a {
+.sectioncontainer .leftblock .buttonwrap .but1:hover {
+  background-color: #377DFF;
+}
+.sectioncontainer .leftblock .buttonwrap a {
   color: #FAFAFA;
 }
 .sectioncontainer .rightblock {
@@ -413,4 +423,68 @@ footer {
 .containerfooter .liwrap .element ul li {
   font-size: 20px;
   color: #D1E0FB;
+}
+
+.section3center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  position: relative;
+  margin-top: 100px;
+}
+.section3center .companyleftblock {
+  z-index: 2;
+  max-width: 560px;
+  width: 100%;
+}
+.section3center .companyleftblock h4 {
+  font-size: 13px;
+  color: #377DFF;
+  margin-bottom: 25px;
+}
+.section3center .companyleftblock h1 {
+  font-size: 40px;
+  color: #FAFAFA;
+  margin-bottom: 40px;
+}
+.section3center .companyleftblock p {
+  font-size: 20px;
+  color: #D1E0FB;
+}
+.section3center .companyleftblock .companyprocwrap {
+  margin-top: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section3center .companyleftblock .companyprocwrap .number {
+  font-size: 55px;
+  color: #377DFF;
+}
+.section3center .companyleftblock .companyprocwrap p {
+  font-size: 20px;
+  color: #D1E0FB;
+}
+.section3center .sosisi {
+  max-width: 1600px;
+  width: 100%;
+  height: 150px;
+  left: 0;
+  top: 25px;
+  background-color: #377DFF;
+  position: absolute;
+  z-index: 1;
+  border-top-left-radius: 160px;
+  border-bottom-right-radius: 122px;
+}
+.section3center .companyrightblock {
+  z-index: 2;
 }/*# sourceMappingURL=global.css.map */
