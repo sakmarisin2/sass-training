@@ -1,362 +1,435 @@
 // header styles
 body {
-    background-color: #1C1F23;
-    .container {
-        @extend %center;
-        
-        .wrap {
-            @include center(flex ,space-around ,center);
-            padding: 30px;
-            
-            h1 {
-                font-size: 35px;
-                color: $color2;
-                background-color: $color1;
-                height: 90px;
-                max-width: 200px;
-                width: 100%;
-                border-radius: $border25;
-                @include center(flex ,center ,center);
-                border-top-width: auto;
-                
-                
-                
-            }
-            .button {
-                font-size: 20px;
-                max-width: 200px;
-                width: 100%;
-                height: 50px;
-                border: none;
-                cursor: pointer;
-                background-color: $color1;
-                border-radius: $border25;
-                color: $color2;
-                }
+  background-color: #1c1f23;
+  .container {
+    @extend %center;
 
-            .navwrap {
-                max-width: 900px;
-                width: 100%;
-                @include flex(flex ,flex-end);
-            
-                .nav {
-                    @include flex(flex ,space-around);
-                    max-width: 600px;
-                    width: 100%;
-                    font-size: 20px;
-                    color: $color3;  
-                    a {
-                        color: $color3;
-                    }  
-                }
-            }
+    .wrap {
+      @include center(flex, space-around, center);
+      padding: 30px;
 
+      h1 {
+        font-size: 35px;
+        color: $color2;
+        background-color: $color1;
+        height: 90px;
+        max-width: 200px;
+        width: 100%;
+        border-radius: $border25;
+        @include center(flex, center, center);
+        border-top-width: auto;
+      }
+      .button {
+        font-size: 20px;
+        max-width: 200px;
+        width: 100%;
+        height: $var50;
+        border: none;
+        cursor: pointer;
+        background-color: $color1;
+        border-radius: $border25;
+        color: $color2;
+      }
+
+      .navwrap {
+        max-width: 900px;
+        width: 100%;
+        @include flex(flex, flex-end);
+
+        .nav {
+          @include flex(flex, space-around);
+          max-width: 600px;
+          width: 100%;
+          font-size: 20px;
+          color: $color3;
+          a {
+            color: $color3;
+          }
         }
-        
+      }
     }
+  }
 }
 // landing page styles
 
-.sectioncontainer   {
-    @extend %center2;
-    @include flex(flex ,space-around);
-    position: relative;
-    margin-top: 90px;
+.sectioncontainer {
+  @extend %center2;
+  @include flex(flex, space-around);
+  position: relative;
+  margin-top: 90px;
 
-    .backbord   {
-        max-width: 1600px;
-        width: 100%;
-        height: 110px;
-        left: 0;
-        top: 40px;
-        background-color: $color1;
-        position: absolute;
-        z-index: 1;
-        border-bottom-left-radius: 122px;
-        border-top-right-radius: 122px;
-        
-    }
-    .backbord2  {
-        max-width: 1125px;
-        width: 100%;
-        height: 130px;
-        background-color: $color1;
-        position: absolute;
-        z-index: 1;
-        border-bottom-left-radius: 122px;
-        border-bottom-right-radius: 122px;
-        right: 0;
-        bottom: 160px;
-        
-    }
+  .backbord {
+    max-width: 1600px;
+    width: 100%;
+    height: 110px;
+    left: 0;
+    top: 40px;
+    background-color: $color1;
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 122px;
+    border-top-right-radius: 122px;
+  }
+  .backbord2 {
+    max-width: 1125px;
+    width: 100%;
+    height: 130px;
+    background-color: $color1;
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 122px;
+    border-bottom-right-radius: 122px;
+    right: 0;
+    bottom: 160px;
+  }
 
-    .leftblock  {
-        max-width: 300px;
+  .leftblock {
+    max-width: 300px;
+    width: 100%;
+    color: $color2;
+    margin-top: $marg20;
+    z-index: 10;
+
+    h3 {
+      font-size: 13px;
+      color: $color1;
+    }
+    h1 {
+      font-size: $var40;
+      margin-top: $border25;
+      margin-bottom: 35px;
+    }
+    p {
+      color: $color3;
+      font-size: $marg20;
+    }
+    .buttonwrap {
+      max-width: 355px;
+      width: 100%;
+      @include flex(flex, space-between);
+      margin-top: $border25;
+
+      .but1 {
+        max-width: 135px;
         width: 100%;
+        height: 40px;
+        border: 2px $color1 solid;
+        border-radius: 12px;
+        @include center(flex, center, center);
+        cursor: pointer;
+        transition: all, 1s, ease-in;
+        &:hover {
+          background-color: $color1;
+        }
+      }
+
+      a {
         color: $color2;
-        margin-top: $marg20;
-        z-index: 10;
-        
-        h3  {
-            font-size: 13px;
-            color: $color1;
-        }
-        h1  {
-            font-size: $var40;
-            margin-top: $border25;
-            margin-bottom: 35px;
-        }
-        p   {
-            color: $color3;
-            font-size: $marg20;
-        }
-        .buttonwrap {
-            max-width: 355px;
-            width: 100%;
-            @include flex(flex ,space-between);
-            margin-top: $border25;
-
-            .but1   {
-                max-width: 135px;
-                width: 100%;
-                height: 40px;
-                border: 2px $color1 solid;
-                border-radius: 12px;
-                @include center(flex ,center ,center);
-                cursor: pointer;
-                transition: all ,1s ,ease-in;
-                &:hover {
-                    background-color: $color1;
-                }
-                }
-
-                a  {
-                    color: $color2;
-                }
-            }
-        }
-    
-    .rightblock {
-        max-width: 950px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        z-index: 10;
-       
-        .box    {
-            max-width: 255px;
-            width: 100%;
-            height: 284px;
-            background-color: #2D2F33;
-            border-radius: 12px;
-            @include column(flex ,column ,start);
-            margin: $marg20 $marg10;
-            padding: $marg20;
-            line-height: 30px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
-            h1  {
-                font-size: $marg20;
-                color: $color2;
-                margin-top: $var25;
-                margin-bottom: $marg10;
-                
-            }
-            p  {
-                font-size: 16px;
-                color: $color3;
-            }
-
-
-            .boxcr  {
-                height: 96px;
-                width: 96px;
-                border-radius: 48px;
-                @include center(flex ,center ,center);
-                background-color: rgba(0,0,128,0.1);
-                margin-top: $marg20;
-                   
-                }
-            
-            }
-        }
-
+      }
     }
- 
+  }
+
+  .rightblock {
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+
+    .box {
+      max-width: 255px;
+      width: 100%;
+      height: 284px;
+      background-color: #2d2f33;
+      border-radius: 12px;
+      @include column(flex, column, start);
+      margin: $marg20 $marg10;
+      padding: $marg20;
+      line-height: 30px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+      h1 {
+        font-size: $marg20;
+        color: $color2;
+        margin-top: $var25;
+        margin-bottom: $marg10;
+      }
+      p {
+        font-size: 16px;
+        color: $color3;
+      }
+
+      .boxcr {
+        height: 96px;
+        width: 96px;
+        border-radius: 48px;
+        @include center(flex, center, center);
+        background-color: rgba(0, 0, 128, 0.1);
+        margin-top: $marg20;
+      }
+    }
+  }
+}
+
 // section 2 styles
 
-.section2container  {
+.section2container {
+  max-width: 1178px;
+  width: 100%;
+  margin: 0 auto;
+
+  .titlewrap {
+    height: 123px;
+    @include columnspace(flex, column, space-evenly);
+    text-align: center;
+    margin-top: 100px;
+
+    h1 {
+      font-size: $var40;
+      color: $color2;
+    }
+    P {
+      font-size: $marg20;
+      color: $color3;
+    }
+  }
+
+  .box2wrap {
     max-width: 1178px;
     width: 100%;
-    margin: 0 auto;
-    
+    @include wrap(flex, wrap, center);
+    margin-left: $var40;
+    margin-top: 88px;
 
-    .titlewrap  {
-        height: 123px;
-        @include columnspace(flex ,column ,space-evenly);
-        text-align: center;
-        margin-top: 100px;
+    .box2 {
+      max-width: 350px;
+      width: 100%;
+      height: 190px;
+      @include columnspace(flex, column, start);
+      line-height: $marg20;
+      margin: 15px;
+      p {
+        color: $color3;
+        margin-left: 70px;
+        font-size: $marg20;
+      }
 
-        h1  {
-            font-size: $var40;
-            color: $color2;
+      .boximgwrap {
+        @include center(flex, start, top);
+
+        h1 {
+          color: $color2;
+          margin-left: 18px;
+          font-size: $var25;
         }
-        P   {
-            font-size: $marg20;
-            color: $color3;
-        }
+      }
     }
-
-
-    .box2wrap {
-        max-width: 1178px;
-        width: 100%;
-        @include wrap(flex ,wrap ,center);
-        margin-left: $var40;
-        margin-top: 88px;
-        
-        .box2 {
-            max-width: 350px;
-            width: 100%;
-            height: 190px;
-            @include columnspace(flex ,column ,start);
-            line-height: $marg20;
-            margin: 15px;
-            p  {
-                color: $color3;
-                margin-left: 70px;
-                font-size: $marg20;
-            }
-            
-            .boximgwrap {
-                @include center(flex ,start ,top);
-                
-                h1 {
-                    color: $color2;
-                    margin-left: 18px;
-                    font-size: $var25;
-                }
-            }
-
-        }
-    }
-        
+  }
 }
 // footer
 footer {
-    background-color: #0C0C0D;
+  background-color: #0c0c0d;
 }
-.containerfooter   {
-    max-width: 1412px;
+.containerfooter {
+  max-width: 1412px;
+  width: 100%;
+  margin: 0 auto;
+  @include flex(flex, space-between);
+  padding: 130px 0;
+
+  .footerleft {
+    h1 {
+      font-size: 35px;
+      color: $color2;
+      margin-bottom: $var25;
+    }
+
+    p {
+      font-size: $marg20;
+      color: $color3;
+    }
+    .footerimgwr {
+      max-width: 250px;
+      width: 100%;
+      @include flex(flex, space-between);
+      margin-top: 60px;
+      margin-bottom: 160px;
+    }
+    .span {
+      color: #77838f;
+    }
+  }
+  .liwrap {
+    max-width: 917px;
     width: 100%;
-    margin: 0 auto;
-    @include flex(flex ,space-between);
-    padding: 130px 0;
-    
+    @include flex(flex, space-between);
 
-    .footerleft {
-        h1  {
-            font-size: 35px;
-            color: $color2;
-            margin-bottom: $var25;
-        }
+    .element {
+      h3 {
+        font-size: $var25;
+        color: $color2;
+        margin-bottom: $var40;
+      }
+      ul {
+        line-height: 30px;
 
-        p   {
-            font-size: $marg20;
-            color: $color3;
+        li {
+          font-size: $marg20;
+          color: $color3;
         }
-        .footerimgwr {
-            max-width: 250px;
-            width: 100%;
-            @include flex(flex ,space-between);
-            margin-top: 60px;
-            margin-bottom: 160px;
-        }
-        .span   {
-            color: #77838F;
-        }
+      }
     }
-    .liwrap {
-        max-width: 917px;
-        width: 100%;
-        @include flex(flex ,space-between);
-        
-
-        .element    {
-            
-            h3  {
-                font-size: $var25;
-                color: $color2;
-                margin-bottom: $var40;
-            }
-            ul  {
-                line-height: 30px;
-                
-                li  {
-                    font-size: $marg20;
-                    color: $color3;
-                    
-                }
-            }
-            
-        }
-    }
+  }
 }
 // COMPANY SECTION LANDING PAGE
 
 .section3center {
-    @extend %center2 ;
-    @include center(flex ,space-around ,top);
-    position: relative;
-    margin-top: 100px;
-    .companyleftblock {
-        z-index: 2;
-        max-width: 560px;
-        width: 100%;
-        
-        h4 {
-            font-size: 13px;
-            color: $color1;
-            margin-bottom: $var25;
-        }
-        h1 {
-            font-size: $var40;
-            color: $color2;
-            margin-bottom: $var40;
-        }
-        p {
-            font-size: $marg20;
-            color: $color3;
+  @extend %center2;
+  @include center(flex, space-around, top);
+  position: relative;
+  margin-top: 100px;
+  .companyleftblock {
+    z-index: 2;
+    max-width: 560px;
+    width: 100%;
 
-        }
-        .companyprocwrap {
-            margin-top: 86px;
-            @include flex(flex ,space-between);
-            
-            .number {
-                font-size: 55px;
-                color: $color1;
+    h4 {
+      font-size: 13px;
+      color: $color1;
+      margin-bottom: $var25;
+    }
+    h1 {
+      font-size: $var40;
+      color: $color2;
+      margin-bottom: $var40;
+    }
+    p {
+      font-size: $marg20;
+      color: $color3;
+      margin-bottom: $marg10;
+    }
+    .companyprocwrap {
+      margin-top: 86px;
+      @include flex(flex, space-between);
+
+      .number {
+        font-size: $var50;
+        color: $color1;
+      }
+      p {
+        font-size: $marg20;
+        color: $color3;
+      }
+    }
+  }
+  .sosisi {
+    max-width: 1600px;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    top: $var25;
+    background-color: $color1;
+    position: absolute;
+    z-index: 1;
+    border-top-left-radius: 160px;
+    border-bottom-right-radius: 122px;
+  }
+  .companyrightblock {
+    z-index: 2;
+  }
+}
+// company section 2 styles
+
+.company2center {
+  @extend %center2;
+  .company2wrap {
+    @include flex(flex, space-around);
+    position: relative;
+
+    .company2leftblock {
+      margin-top: $var50;
+      z-index: 2;
+      h1 {
+        font-size: $var40;
+        color: $color2;
+        margin-bottom: $var30;
+      }
+      p {
+        font-size: $marg20;
+        color: $color3;
+        margin-bottom: $marg10;
+      }
+      .quetionsblock {
+        margin-top: $var50;
+        .quetionblock {
+          margin-bottom: $var30;
+          @include flex(flex, space-between);
+          .textcontent {
+            max-width: 391px;
+            width: 100%;
+
+            h4 {
+              font-size: $var25;
+              color: $color2;
+              margin-bottom: $var25;
             }
             p {
-                font-size: $marg20;
-                color: $color3;
-                
+              font-size: $marg20;
+              color: $color3;
+              margin-bottom: $marg10;
             }
+          }
         }
+      }
     }
-    .sosisi {
-        max-width: 1600px;
-        width: 100%;
-        height: 150px;
-        left: 0;
-        top: 25px;
-        background-color: $color1;
-        position: absolute;
-        z-index: 1;
-        border-top-left-radius: 160px;
-        border-bottom-right-radius: 122px;
+    .sosisi2 {
+      max-width: 1600px;
+      width: 100%;
+      height: 150px;
+      left: 0;
+      top: $var30;
+      background-color: $color1;
+      position: absolute;
+      z-index: 1;
+      border-top-left-radius: 160px;
+      border-bottom-right-radius: 122px;
     }
-    .companyrightblock {
-        z-index: 2;
+    .company2rightblock {
+      z-index: 2;
     }
+  }
+}
+// middle section
+.section3center {
+  @extend %center2;
+  .sec3left {
+    z-index: 2;
+  }
+  .sosisi3 {
+    max-width: 1600px;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    top: $var30;
+    background-color: $color1;
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 160px;
+    border-top-right-radius: 122px;
+  }
+  .sec3right {
+    z-index: 2;
+    h1 {
+      font-size: $var40;
+      color: $color2;
+      margin-bottom: $marg10;
+      margin-top: $var40;
+    }
+    p {
+      font-size: $marg20;
+      color: $color3;
+      margin-top: $var50;
+    }
+  }
 }
