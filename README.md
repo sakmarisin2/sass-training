@@ -1,2 +1,2 @@
-# portfolio1
-first web page for portfolio
+# sass training
+sass training project
